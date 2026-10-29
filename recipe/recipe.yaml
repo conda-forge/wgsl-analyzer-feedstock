@@ -12,7 +12,7 @@ source:
   sha256: 656ca21fc1e37bc8c1bab25c434b315ba910d4f6702ee6905e20e9860e8f482c
 
 build:
-  number: 0
+  number: 1
 
 outputs:
   - staging:

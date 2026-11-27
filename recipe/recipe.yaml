@@ -1,14 +1,14 @@
 context:
-  version: "2026.09.30"
-  # Upstream tags releases by date, e.g. YYYY-MM-DD
-  tag: ${{ version | replace(".", "-") }}
+  # Upstream tags releases by date (YYYY-MM-DD); keep the raw tag here so the
+  # autotick bot can match it against upstream releases.
+  version: "2026-09-30"
 
 recipe:
   name: wgsl-analyzer
-  version: ${{ version }}
+  version: ${{ version | replace("-", ".") }}
 
 source:
-  url: https://github.com/wgsl-analyzer/wgsl-analyzer/archive/refs/tags/${{ tag }}.tar.gz
+  url: https://github.com/wgsl-analyzer/wgsl-analyzer/archive/refs/tags/${{ version }}.tar.gz
   sha256: 656ca21fc1e37bc8c1bab25c434b315ba910d4f6702ee6905e20e9860e8f482c
 
 build:

@@ -1,7 +1,7 @@
 context:
   # Upstream tags releases by date (YYYY-MM-DD); keep the raw tag here so the
   # autotick bot can match it against upstream releases.
-  version: "2026-11-02"
+  version: "2026-11-02.1"
 
 recipe:
   name: wgsl-analyzer
@@ -9,7 +9,7 @@ recipe:
 
 source:
   url: https://github.com/wgsl-analyzer/wgsl-analyzer/archive/refs/tags/${{ version }}.tar.gz
-  sha256: 0ef0ec3f9a2cc4dc90bb6323b3b851e7d287895304cd8aaa95bd1c39ac1d1b23
+  sha256: fddb529051dd0181e18b2a419ae3927027b26f650011d676ee99a9c53324f5e7
 
 build:
   number: 0
